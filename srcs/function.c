@@ -1,3 +1,11 @@
+//预处理命令，基本的输入输出函数库
+#include <stdio.h>
+//随机函数rand()所在库
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+#include <arm_neon.h>
+
 void matmul_plain(const float *p1, const float * p2, size_t nSize){
     float each[nSize*nSize];
     for(size_t i=0;i<nSize*nSize;i++){
